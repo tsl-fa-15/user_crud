@@ -1,0 +1,11 @@
+<h1>Displaying user #<%= @user.id %></h1>
+<dl>
+  <dt>Username:</dt>
+  <dd><%= @user.username %></dd>
+  <dt>email:</dt>
+  <dd><%= @user.email %></dd>
+</dl>
+
+<a href="/users/<%= @user.id %>/edit">Edit</a> |
+<a href="/users/<%= @user.id %>/destroy">Destroy</a> |
+<a href="/users">Back to index</a>
